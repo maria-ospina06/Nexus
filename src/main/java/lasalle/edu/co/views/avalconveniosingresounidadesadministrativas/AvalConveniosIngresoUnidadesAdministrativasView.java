@@ -1,0 +1,197 @@
+package lasalle.edu.co.views.avalconveniosingresounidadesadministrativas;
+
+import com.vaadin.flow.component.Composite;
+import com.vaadin.flow.component.avatar.Avatar;
+import com.vaadin.flow.component.button.Button;
+import com.vaadin.flow.component.dependency.Uses;
+import com.vaadin.flow.component.grid.Grid;
+import com.vaadin.flow.component.grid.GridVariant;
+import com.vaadin.flow.component.html.H2;
+import com.vaadin.flow.component.html.H4;
+import com.vaadin.flow.component.html.H6;
+import com.vaadin.flow.component.icon.Icon;
+import com.vaadin.flow.component.orderedlayout.FlexComponent;
+import com.vaadin.flow.component.orderedlayout.FlexComponent.Alignment;
+import com.vaadin.flow.component.orderedlayout.FlexComponent.JustifyContentMode;
+import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
+import com.vaadin.flow.component.orderedlayout.VerticalLayout;
+import com.vaadin.flow.component.textfield.NumberField;
+import com.vaadin.flow.router.Menu;
+import com.vaadin.flow.router.PageTitle;
+import com.vaadin.flow.router.Route;
+import com.vaadin.flow.spring.data.VaadinSpringDataHelpers;
+import com.vaadin.flow.theme.lumo.LumoUtility.Gap;
+import lasalle.edu.co.data.SamplePerson;
+import lasalle.edu.co.services.SamplePersonService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.vaadin.lineawesome.LineAwesomeIconUrl;
+
+@PageTitle("Aval Convenios Ingreso Unidades Administrativas")
+@Route("my-view6")
+@Menu(order = 16, icon = LineAwesomeIconUrl.PENCIL_RULER_SOLID)
+@Uses(Icon.class)
+public class AvalConveniosIngresoUnidadesAdministrativasView extends Composite<VerticalLayout> {
+
+    public AvalConveniosIngresoUnidadesAdministrativasView() {
+        HorizontalLayout layoutRow7 = new HorizontalLayout();
+        HorizontalLayout layoutRow = new HorizontalLayout();
+        VerticalLayout layoutColumn3 = new VerticalLayout();
+        H2 h2 = new H2();
+        VerticalLayout layoutColumn4 = new VerticalLayout();
+        VerticalLayout layoutColumn5 = new VerticalLayout();
+        VerticalLayout layoutColumn6 = new VerticalLayout();
+        VerticalLayout layoutColumn7 = new VerticalLayout();
+        VerticalLayout layoutColumn8 = new VerticalLayout();
+        VerticalLayout layoutColumn9 = new VerticalLayout();
+        VerticalLayout layoutColumn10 = new VerticalLayout();
+        Icon icon = new Icon();
+        HorizontalLayout layoutRow2 = new HorizontalLayout();
+        VerticalLayout layoutColumn11 = new VerticalLayout();
+        Avatar avatar = new Avatar();
+        Button buttonSecondary = new Button();
+        Button buttonSecondary2 = new Button();
+        HorizontalLayout layoutRow3 = new HorizontalLayout();
+        VerticalLayout layoutColumn12 = new VerticalLayout();
+        H4 h4 = new H4();
+        HorizontalLayout layoutRow4 = new HorizontalLayout();
+        NumberField numberField = new NumberField();
+        VerticalLayout layoutColumn13 = new VerticalLayout();
+        HorizontalLayout layoutRow5 = new HorizontalLayout();
+        VerticalLayout layoutColumn14 = new VerticalLayout();
+        VerticalLayout layoutColumn2 = new VerticalLayout();
+        Grid minimalistGrid = new Grid(SamplePerson.class);
+        VerticalLayout layoutColumn15 = new VerticalLayout();
+        HorizontalLayout layoutRow8 = new HorizontalLayout();
+        HorizontalLayout layoutRow6 = new HorizontalLayout();
+        VerticalLayout layoutColumn16 = new VerticalLayout();
+        H6 h6 = new H6();
+        VerticalLayout layoutColumn17 = new VerticalLayout();
+        HorizontalLayout layoutRow9 = new HorizontalLayout();
+        getContent().getStyle().set("width", "100%");
+        getContent().getStyle().set("flex-grow", "1");
+        layoutRow7.addClassName(Gap.MEDIUM);
+        layoutRow7.getStyle().set("width", "100%");
+        layoutRow7.getStyle().set("height", "min-content");
+        layoutRow.addClassName(Gap.MEDIUM);
+        layoutRow.getStyle().set("width", "100%");
+        layoutRow.getStyle().set("height", "min-content");
+        layoutColumn3.getStyle().set("flex-grow", "1");
+        h2.setText("Unidades Administrativas");
+        layoutRow.setAlignSelf(FlexComponent.Alignment.CENTER, h2);
+        h2.getStyle().set("width", "max-content");
+        layoutColumn4.getStyle().set("flex-grow", "1");
+        layoutColumn5.getStyle().set("flex-grow", "1");
+        layoutColumn5.setJustifyContentMode(JustifyContentMode.END);
+        layoutColumn5.setAlignItems(Alignment.END);
+        layoutColumn6.getStyle().set("flex-grow", "1");
+        layoutColumn6.setJustifyContentMode(JustifyContentMode.END);
+        layoutColumn6.setAlignItems(Alignment.END);
+        layoutColumn7.getStyle().set("flex-grow", "1");
+        layoutColumn7.setJustifyContentMode(JustifyContentMode.END);
+        layoutColumn7.setAlignItems(Alignment.END);
+        layoutColumn8.getStyle().set("flex-grow", "1");
+        layoutColumn8.setJustifyContentMode(JustifyContentMode.END);
+        layoutColumn8.setAlignItems(Alignment.END);
+        layoutColumn9.getStyle().set("flex-grow", "1");
+        layoutColumn9.setJustifyContentMode(JustifyContentMode.END);
+        layoutColumn9.setAlignItems(Alignment.END);
+        layoutColumn10.getStyle().set("flex-grow", "1");
+        layoutColumn10.setJustifyContentMode(JustifyContentMode.END);
+        layoutColumn10.setAlignItems(Alignment.END);
+        icon.setIcon("lumo:user");
+        icon.getStyle().set("width", "200px");
+        icon.getStyle().set("height", "100px");
+        layoutRow2.addClassName(Gap.MEDIUM);
+        layoutRow2.getStyle().set("width", "100%");
+        layoutRow2.getStyle().set("height", "min-content");
+        layoutColumn11.getStyle().set("flex-grow", "1");
+        avatar.setName("Firstname Lastname");
+        buttonSecondary.setText("Salir");
+        buttonSecondary.getStyle().set("width", "min-content");
+        buttonSecondary2.setText("Convenios");
+        buttonSecondary2.getStyle().set("width", "min-content");
+        layoutRow3.addClassName(Gap.MEDIUM);
+        layoutRow3.getStyle().set("width", "100%");
+        layoutRow3.getStyle().set("height", "min-content");
+        layoutColumn12.getStyle().set("flex-grow", "1");
+        h4.setText("Avalar Convenios");
+        h4.getStyle().set("width", "max-content");
+        layoutRow4.addClassName(Gap.MEDIUM);
+        layoutRow4.getStyle().set("width", "100%");
+        layoutRow4.getStyle().set("height", "min-content");
+        layoutRow4.setAlignItems(Alignment.CENTER);
+        layoutRow4.setJustifyContentMode(JustifyContentMode.END);
+        numberField.setLabel("Total de Convenios en Trámite");
+        layoutRow4.setAlignSelf(FlexComponent.Alignment.CENTER, numberField);
+        numberField.getStyle().set("width", "250px");
+        layoutColumn13.getStyle().set("flex-grow", "1");
+        layoutRow5.addClassName(Gap.MEDIUM);
+        layoutRow5.getStyle().set("width", "100%");
+        layoutRow5.getStyle().set("flex-grow", "1");
+        layoutColumn14.getStyle().set("flex-grow", "1");
+        layoutColumn2.getStyle().set("width", "100%");
+        layoutColumn2.getStyle().set("flex-grow", "1");
+        minimalistGrid.addThemeVariants(GridVariant.LUMO_COMPACT, GridVariant.LUMO_NO_BORDER,
+                GridVariant.LUMO_NO_ROW_BORDERS);
+        minimalistGrid.getStyle().set("width", "100%");
+        minimalistGrid.getStyle().set("flex-grow", "0");
+        setGridSampleData(minimalistGrid);
+        layoutColumn15.getStyle().set("flex-grow", "1");
+        layoutRow8.addClassName(Gap.MEDIUM);
+        layoutRow8.getStyle().set("width", "100%");
+        layoutRow8.getStyle().set("height", "min-content");
+        layoutRow6.addClassName(Gap.MEDIUM);
+        layoutRow6.getStyle().set("width", "100%");
+        layoutRow6.getStyle().set("height", "min-content");
+        layoutColumn16.getStyle().set("flex-grow", "1");
+        h6.setText(
+                "Contáctenos: Carrera 5ª No. 59A-44 | Tel: (571) 348 8000 Ext. 1107 | Bogotá, Colombia | relainter@lasalle.edu.co\r\n© Todos los derechos reservados. Contenido propiedad exclusiva de Universidad de La Salle.");
+        layoutRow6.setAlignSelf(FlexComponent.Alignment.CENTER, h6);
+        h6.getStyle().set("width", "max-content");
+        layoutColumn17.getStyle().set("flex-grow", "1");
+        layoutRow9.addClassName(Gap.MEDIUM);
+        layoutRow9.getStyle().set("width", "100%");
+        layoutRow9.getStyle().set("height", "min-content");
+        getContent().add(layoutRow7);
+        getContent().add(layoutRow);
+        layoutRow.add(layoutColumn3);
+        layoutRow.add(h2);
+        layoutRow.add(layoutColumn4);
+        layoutRow.add(layoutColumn5);
+        layoutRow.add(layoutColumn6);
+        layoutRow.add(layoutColumn7);
+        layoutRow.add(layoutColumn8);
+        layoutRow.add(layoutColumn9);
+        layoutRow.add(layoutColumn10);
+        layoutRow.add(icon);
+        getContent().add(layoutRow2);
+        layoutRow2.add(layoutColumn11);
+        layoutRow2.add(avatar);
+        layoutRow2.add(buttonSecondary);
+        layoutRow2.add(buttonSecondary2);
+        getContent().add(layoutRow3);
+        layoutRow3.add(layoutColumn12);
+        layoutRow3.add(h4);
+        layoutRow3.add(layoutRow4);
+        layoutRow4.add(numberField);
+        layoutRow3.add(layoutColumn13);
+        getContent().add(layoutRow5);
+        layoutRow5.add(layoutColumn14);
+        layoutRow5.add(layoutColumn2);
+        layoutColumn2.add(minimalistGrid);
+        layoutRow5.add(layoutColumn15);
+        getContent().add(layoutRow8);
+        getContent().add(layoutRow6);
+        layoutRow6.add(layoutColumn16);
+        layoutRow6.add(h6);
+        layoutRow6.add(layoutColumn17);
+        getContent().add(layoutRow9);
+    }
+
+    private void setGridSampleData(Grid grid) {
+        grid.setItems(query -> samplePersonService.list(VaadinSpringDataHelpers.toSpringPageRequest(query)).stream());
+    }
+
+    @Autowired()
+    private SamplePersonService samplePersonService;
+}

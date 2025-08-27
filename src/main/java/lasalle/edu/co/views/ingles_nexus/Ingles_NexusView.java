@@ -1,0 +1,191 @@
+package lasalle.edu.co.views.ingles_nexus;
+
+import com.vaadin.flow.component.Composite;
+import com.vaadin.flow.component.combobox.MultiSelectComboBox;
+import com.vaadin.flow.component.html.H1;
+import com.vaadin.flow.component.html.H2;
+import com.vaadin.flow.component.html.H6;
+import com.vaadin.flow.component.html.Paragraph;
+import com.vaadin.flow.component.icon.Icon;
+import com.vaadin.flow.component.orderedlayout.FlexComponent;
+import com.vaadin.flow.component.orderedlayout.FlexComponent.Alignment;
+import com.vaadin.flow.component.orderedlayout.FlexComponent.JustifyContentMode;
+import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
+import com.vaadin.flow.component.orderedlayout.VerticalLayout;
+import com.vaadin.flow.router.Menu;
+import com.vaadin.flow.router.PageTitle;
+import com.vaadin.flow.router.Route;
+import com.vaadin.flow.theme.lumo.LumoUtility.Gap;
+import com.vaadin.flow.theme.lumo.LumoUtility.Padding;
+import java.util.ArrayList;
+import java.util.List;
+import org.vaadin.lineawesome.LineAwesomeIconUrl;
+
+@PageTitle("Ingles_Nexus")
+@Route("2")
+@Menu(order = 1, icon = LineAwesomeIconUrl.PENCIL_RULER_SOLID)
+public class Ingles_NexusView extends Composite<VerticalLayout> {
+
+    public Ingles_NexusView() {
+        VerticalLayout layoutColumn2 = new VerticalLayout();
+        HorizontalLayout layoutRow9 = new HorizontalLayout();
+        HorizontalLayout layoutRow = new HorizontalLayout();
+        VerticalLayout layoutColumn4 = new VerticalLayout();
+        HorizontalLayout layoutRow2 = new HorizontalLayout();
+        Icon icon = new Icon();
+        HorizontalLayout layoutRow10 = new HorizontalLayout();
+        H1 h1 = new H1();
+        VerticalLayout layoutColumn5 = new VerticalLayout();
+        HorizontalLayout layoutRow3 = new HorizontalLayout();
+        VerticalLayout layoutColumn6 = new VerticalLayout();
+        HorizontalLayout layoutRow4 = new HorizontalLayout();
+        H2 h2 = new H2();
+        VerticalLayout layoutColumn7 = new VerticalLayout();
+        HorizontalLayout layoutRow5 = new HorizontalLayout();
+        MultiSelectComboBox multiSelectComboBox = new MultiSelectComboBox();
+        VerticalLayout layoutColumn8 = new VerticalLayout();
+        HorizontalLayout layoutRow6 = new HorizontalLayout();
+        VerticalLayout layoutColumn9 = new VerticalLayout();
+        VerticalLayout layoutColumn3 = new VerticalLayout();
+        Paragraph textLarge = new Paragraph();
+        VerticalLayout layoutColumn10 = new VerticalLayout();
+        HorizontalLayout layoutRow7 = new HorizontalLayout();
+        VerticalLayout layoutColumn11 = new VerticalLayout();
+        HorizontalLayout layoutRow11 = new HorizontalLayout();
+        VerticalLayout layoutColumn12 = new VerticalLayout();
+        HorizontalLayout layoutRow8 = new HorizontalLayout();
+        VerticalLayout layoutColumn13 = new VerticalLayout();
+        H6 h6 = new H6();
+        VerticalLayout layoutColumn14 = new VerticalLayout();
+        HorizontalLayout layoutRow12 = new HorizontalLayout();
+        getContent().setHeightFull();
+        getContent().setWidthFull();
+        layoutColumn2.getStyle().set("width", "100%");
+        layoutColumn2.getStyle().set("flex-grow", "1");
+        layoutRow9.addClassName(Gap.MEDIUM);
+        layoutRow9.getStyle().set("width", "100%");
+        layoutRow9.getStyle().set("height", "min-content");
+        layoutRow.addClassName(Gap.MEDIUM);
+        layoutRow.getStyle().set("width", "100%");
+        layoutRow.getStyle().set("height", "min-content");
+        layoutColumn4.getStyle().set("flex-grow", "1");
+        layoutRow2.addClassName(Gap.MEDIUM);
+        layoutRow2.getStyle().set("width", "100%");
+        layoutRow2.getStyle().set("height", "min-content");
+        layoutRow2.setAlignItems(Alignment.END);
+        layoutRow2.setJustifyContentMode(JustifyContentMode.END);
+        icon.setIcon("lumo:user");
+        icon.getStyle().set("width", "200px");
+        icon.getStyle().set("height", "100px");
+        layoutRow10.addClassName(Gap.MEDIUM);
+        layoutRow10.getStyle().set("width", "100%");
+        layoutRow10.getStyle().set("height", "min-content");
+        h1.setText("NEXUS");
+        h1.getStyle().set("width", "max-content");
+        layoutColumn5.getStyle().set("flex-grow", "1");
+        layoutRow3.addClassName(Gap.MEDIUM);
+        layoutRow3.getStyle().set("width", "100%");
+        layoutRow3.getStyle().set("height", "min-content");
+        layoutRow3.setAlignItems(Alignment.CENTER);
+        layoutRow3.setJustifyContentMode(JustifyContentMode.END);
+        layoutColumn6.getStyle().set("flex-grow", "1");
+        layoutRow4.addClassName(Gap.MEDIUM);
+        layoutRow4.getStyle().set("width", "100%");
+        layoutRow4.getStyle().set("height", "min-content");
+        layoutRow4.setAlignItems(Alignment.END);
+        layoutRow4.setJustifyContentMode(JustifyContentMode.END);
+        h2.setText("Information System of the Office of International and Interinstitutional Relations");
+        h2.getStyle().set("width", "max-content");
+        layoutColumn7.getStyle().set("flex-grow", "1");
+        layoutRow5.addClassName(Gap.XSMALL);
+        layoutRow5.addClassName(Padding.XSMALL);
+        layoutRow5.getStyle().set("width", "100%");
+        layoutRow5.getStyle().set("height", "min-content");
+        layoutRow5.setAlignItems(Alignment.CENTER);
+        layoutRow5.setJustifyContentMode(JustifyContentMode.END);
+        multiSelectComboBox.setLabel("Idioma");
+        layoutRow5.setAlignSelf(FlexComponent.Alignment.END, multiSelectComboBox);
+        multiSelectComboBox.getStyle().set("width", "120px");
+        setMultiSelectComboBoxSampleData(multiSelectComboBox);
+        layoutColumn8.getStyle().set("flex-grow", "1");
+        layoutRow6.addClassName(Gap.MEDIUM);
+        layoutRow6.getStyle().set("width", "100%");
+        layoutRow6.getStyle().set("flex-grow", "1");
+        layoutColumn9.getStyle().set("flex-grow", "1");
+        layoutColumn3.addClassName(Gap.LARGE);
+        layoutColumn3.getStyle().set("width", "100%");
+        layoutColumn3.getStyle().set("flex-grow", "1");
+        layoutColumn3.setJustifyContentMode(JustifyContentMode.START);
+        layoutColumn3.setAlignItems(Alignment.CENTER);
+        textLarge.setText(
+                "Welcome!\nHere you can submit your Global Mobility requests, consult or establish Strategic Partnerships, and access opportunities related to International Initiatives.\nPlease select the area of your interest:");
+        layoutColumn3.setAlignSelf(FlexComponent.Alignment.END, textLarge);
+        textLarge.getStyle().set("width", "100%");
+        textLarge.getStyle().set("font-size", "var(--lumo-font-size-xl)");
+        layoutColumn10.getStyle().set("flex-grow", "1");
+        layoutRow7.addClassName(Gap.MEDIUM);
+        layoutRow7.getStyle().set("width", "100%");
+        layoutRow7.getStyle().set("height", "min-content");
+        layoutColumn11.getStyle().set("flex-grow", "1");
+        layoutRow11.addClassName(Gap.MEDIUM);
+        layoutRow11.getStyle().set("width", "100%");
+        layoutRow11.getStyle().set("height", "min-content");
+        layoutColumn12.getStyle().set("flex-grow", "1");
+        layoutRow8.addClassName(Gap.MEDIUM);
+        layoutRow8.getStyle().set("width", "100%");
+        layoutRow8.getStyle().set("height", "min-content");
+        layoutColumn13.getStyle().set("flex-grow", "1");
+        h6.setText(
+                "Contact us: Carrera 5ª No. 59A-44 | Tel: (571) 348 8000 Ext. 1107 | Bogotá, Colombia | relainter@lasalle.edu.co\n© All rights reserved. Content is the exclusive property of Universidad de La Salle.");
+        layoutRow8.setAlignSelf(FlexComponent.Alignment.CENTER, h6);
+        h6.getStyle().set("width", "max-content");
+        layoutColumn14.getStyle().set("flex-grow", "1");
+        layoutRow12.addClassName(Gap.MEDIUM);
+        layoutRow12.getStyle().set("width", "100%");
+        layoutRow12.getStyle().set("height", "min-content");
+        getContent().add(layoutColumn2);
+        layoutColumn2.add(layoutRow9);
+        layoutColumn2.add(layoutRow);
+        layoutRow.add(layoutColumn4);
+        layoutRow.add(layoutRow2);
+        layoutRow2.add(icon);
+        layoutRow2.add(layoutRow10);
+        layoutRow2.add(h1);
+        layoutRow.add(layoutColumn5);
+        layoutColumn2.add(layoutRow3);
+        layoutRow3.add(layoutColumn6);
+        layoutRow3.add(layoutRow4);
+        layoutRow4.add(h2);
+        layoutRow3.add(layoutColumn7);
+        layoutColumn2.add(layoutRow5);
+        layoutRow5.add(multiSelectComboBox);
+        layoutRow5.add(layoutColumn8);
+        layoutColumn2.add(layoutRow6);
+        layoutRow6.add(layoutColumn9);
+        layoutRow6.add(layoutColumn3);
+        layoutColumn3.add(textLarge);
+        layoutRow6.add(layoutColumn10);
+        layoutColumn2.add(layoutRow7);
+        layoutRow7.add(layoutColumn11);
+        layoutRow7.add(layoutRow11);
+        layoutRow7.add(layoutColumn12);
+        layoutColumn2.add(layoutRow8);
+        layoutRow8.add(layoutColumn13);
+        layoutRow8.add(h6);
+        layoutRow8.add(layoutColumn14);
+        layoutColumn2.add(layoutRow12);
+    }
+
+    record SampleItem(String value, String label, Boolean disabled) {
+    }
+
+    private void setMultiSelectComboBoxSampleData(MultiSelectComboBox multiSelectComboBox) {
+        List<SampleItem> sampleItems = new ArrayList<>();
+        sampleItems.add(new SampleItem("first", "First", null));
+        sampleItems.add(new SampleItem("second", "Second", null));
+        sampleItems.add(new SampleItem("third", "Third", Boolean.TRUE));
+        sampleItems.add(new SampleItem("fourth", "Fourth", null));
+        multiSelectComboBox.setItems(sampleItems);
+        multiSelectComboBox.setItemLabelGenerator(item -> ((SampleItem) item).label());
+    }
+}
