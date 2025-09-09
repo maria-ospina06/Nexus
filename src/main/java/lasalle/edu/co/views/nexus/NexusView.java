@@ -27,8 +27,12 @@ import org.vaadin.lineawesome.LineAwesomeIconUrl;
 public class NexusView extends Composite<VerticalLayout> {
 
     public NexusView() {
+        getContent().setSizeFull(); // vista pantalla completa
+        getContent().getStyle().set("padding", "1rem"); // margenes internas
         HorizontalLayout layoutRow9 = new HorizontalLayout();
         HorizontalLayout layoutRow = new HorizontalLayout();
+        layoutRow.addClassName("responsive-container");
+        layoutRow.addClassName("responsive-row");
         VerticalLayout layoutColumn3 = new VerticalLayout();
         HorizontalLayout layoutRow2 = new HorizontalLayout();
         Icon icon = new Icon();
@@ -36,23 +40,33 @@ public class NexusView extends Composite<VerticalLayout> {
         H1 h1 = new H1();
         VerticalLayout layoutColumn4 = new VerticalLayout();
         HorizontalLayout layoutRow3 = new HorizontalLayout();
+        layoutRow3.addClassName("responsive-container");
+        layoutRow3.addClassName("responsive-row");
         VerticalLayout layoutColumn5 = new VerticalLayout();
         HorizontalLayout layoutRow4 = new HorizontalLayout();
         H2 h2 = new H2();
         VerticalLayout layoutColumn6 = new VerticalLayout();
         HorizontalLayout layoutRow5 = new HorizontalLayout();
+        layoutRow5.addClassName("responsive-container");
+        layoutRow5.addClassName("responsive-row");
         MultiSelectComboBox multiSelectComboBox = new MultiSelectComboBox();
         VerticalLayout layoutColumn7 = new VerticalLayout();
         HorizontalLayout layoutRow6 = new HorizontalLayout();
+        layoutRow6.addClassName("responsive-container");
+        layoutRow6.addClassName("responsive-row");
         VerticalLayout layoutColumn8 = new VerticalLayout();
         VerticalLayout layoutColumn2 = new VerticalLayout();
         Paragraph textLarge = new Paragraph();
         VerticalLayout layoutColumn9 = new VerticalLayout();
         HorizontalLayout layoutRow7 = new HorizontalLayout();
+        layoutRow7.addClassName("responsive-container");
+        layoutRow7.addClassName("responsive-row");
         VerticalLayout layoutColumn10 = new VerticalLayout();
         HorizontalLayout layoutRow11 = new HorizontalLayout();
         VerticalLayout layoutColumn11 = new VerticalLayout();
         HorizontalLayout layoutRow8 = new HorizontalLayout();
+        layoutRow8.addClassName("responsive-container");
+        layoutRow8.addClassName("responsive-row");
         VerticalLayout layoutColumn12 = new VerticalLayout();
         H6 h6 = new H6();
         VerticalLayout layoutColumn13 = new VerticalLayout();
@@ -115,10 +129,17 @@ public class NexusView extends Composite<VerticalLayout> {
         layoutColumn2.setJustifyContentMode(JustifyContentMode.START);
         layoutColumn2.setAlignItems(Alignment.CENTER);
         textLarge.setText(
-                "¡Bienvenido!                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     Aquí podrá realizar sus solicitudes de Movilidad Global, consultar o establecer Relaciones Estratégicas y/o acceder a oportunidades de Iniciativas Internacionales. Por favor seleccione el área de su interés:");
+                "¡Bienvenido! Aquí podrá realizar sus solicitudes de Movilidad Global, consultar o establecer Relaciones Estratégicas y/o acceder a oportunidades de Iniciativas Internacionales. Por favor seleccione el área de su interés:");
         layoutColumn2.setAlignSelf(FlexComponent.Alignment.END, textLarge);
         textLarge.getStyle().set("width", "100%");
         textLarge.getStyle().set("font-size", "var(--lumo-font-size-xl)");
+
+        textLarge.setText(
+                "¡Bienvenido! Aquí podrá realizar sus solicitudes de Movilidad Global, consultar o establecer Relaciones Estratégicas y/o acceder a oportunidades de Iniciativas Internacionales. Por favor seleccione el área de su interés:");
+        layoutColumn2.setAlignSelf(FlexComponent.Alignment.END, textLarge);
+        textLarge.getStyle().set("width", "100%");
+        textLarge.getStyle().set("font-size", "var(--lumo-font-size-xl)");
+
         layoutColumn9.getStyle().set("flex-grow", "1");
         layoutRow7.addClassName(Gap.MEDIUM);
         layoutRow7.getStyle().set("width", "100%");

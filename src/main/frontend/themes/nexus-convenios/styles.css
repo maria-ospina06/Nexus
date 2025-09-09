@@ -17,3 +17,24 @@
 @import url('./views/ingles-ingreso-unidades-administrativas2-view.css');
 @import url('./views/aval-convenios-ingreso-unidades-administrativas-view.css');
 @import url('./views/ingles-aval-convenios-ingreso-unidades-administrativas-view.css');
+
+/* Limitar ancho máximo y centrar contenido */
+.responsive-container {
+  max-width: 1200px;   /* ancho máximo en pantallas grandes */
+  margin: 0 auto;      /* centra horizontalmente */
+  width: 100%;
+  padding: 0 1rem;     /* respiro en los lados */
+}
+
+/* Hacer que filas se vuelvan columnas en pantallas pequeñas */
+.responsive-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .responsive-row {
+    flex-direction: column;
+  }
+}
