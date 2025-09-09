@@ -5,8 +5,8 @@ import com.vaadin.flow.component.combobox.MultiSelectComboBox;
 import com.vaadin.flow.component.html.H1;
 import com.vaadin.flow.component.html.H2;
 import com.vaadin.flow.component.html.H6;
+import com.vaadin.flow.component.html.Image;
 import com.vaadin.flow.component.html.Paragraph;
-import com.vaadin.flow.component.icon.Icon;
 import com.vaadin.flow.component.orderedlayout.FlexComponent;
 import com.vaadin.flow.component.orderedlayout.FlexComponent.Alignment;
 import com.vaadin.flow.component.orderedlayout.FlexComponent.JustifyContentMode;
@@ -35,7 +35,7 @@ public class NexusView extends Composite<VerticalLayout> {
         layoutRow.addClassName("responsive-row");
         VerticalLayout layoutColumn3 = new VerticalLayout();
         HorizontalLayout layoutRow2 = new HorizontalLayout();
-        Icon icon = new Icon();
+        Image logo = new Image("icons/logoSalle.png", "Logo Nexus");
         HorizontalLayout layoutRow10 = new HorizontalLayout();
         H1 h1 = new H1();
         VerticalLayout layoutColumn4 = new VerticalLayout();
@@ -85,9 +85,9 @@ public class NexusView extends Composite<VerticalLayout> {
         layoutRow2.getStyle().set("height", "min-content");
         layoutRow2.setAlignItems(Alignment.END);
         layoutRow2.setJustifyContentMode(JustifyContentMode.END);
-        icon.setIcon("lumo:user");
-        icon.getStyle().set("width", "200px");
-        icon.getStyle().set("height", "100px");
+        logo.setWidth("209px");
+        logo.setHeight("75px");
+        layoutRow2.add(logo);
         layoutRow10.addClassName(Gap.MEDIUM);
         layoutRow10.getStyle().set("width", "100%");
         layoutRow10.getStyle().set("height", "min-content");
@@ -133,13 +133,6 @@ public class NexusView extends Composite<VerticalLayout> {
         layoutColumn2.setAlignSelf(FlexComponent.Alignment.END, textLarge);
         textLarge.getStyle().set("width", "100%");
         textLarge.getStyle().set("font-size", "var(--lumo-font-size-xl)");
-
-        textLarge.setText(
-                "¡Bienvenido! Aquí podrá realizar sus solicitudes de Movilidad Global, consultar o establecer Relaciones Estratégicas y/o acceder a oportunidades de Iniciativas Internacionales. Por favor seleccione el área de su interés:");
-        layoutColumn2.setAlignSelf(FlexComponent.Alignment.END, textLarge);
-        textLarge.getStyle().set("width", "100%");
-        textLarge.getStyle().set("font-size", "var(--lumo-font-size-xl)");
-
         layoutColumn9.getStyle().set("flex-grow", "1");
         layoutRow7.addClassName(Gap.MEDIUM);
         layoutRow7.getStyle().set("width", "100%");
@@ -165,7 +158,7 @@ public class NexusView extends Composite<VerticalLayout> {
         getContent().add(layoutRow);
         layoutRow.add(layoutColumn3);
         layoutRow.add(layoutRow2);
-        layoutRow2.add(icon);
+        layoutRow2.add(logo);
         layoutRow2.add(layoutRow10);
         layoutRow2.add(h1);
         layoutRow.add(layoutColumn4);
