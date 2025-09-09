@@ -38,3 +38,69 @@
     flex-direction: column;
   }
 }
+:root {
+  /* Fondo general */
+  --lumo-base-color: #f5f5dc; /* beige claro */
+  --lumo-shade: #e6e2d3;
+  --lumo-tint: #ffffff;
+
+  /* Texto */
+  --lumo-body-text-color: #2a2a2a; /* gris oscuro para buena legibilidad */
+  --lumo-header-text-color: #1a1a1a; /* títulos */
+  --lumo-primary-text-color: #000000; /* texto de elementos primarios (botones, links) */
+
+  /* Color de enlaces */
+  --lumo-primary-color: #c2b280; /* beige más oscuro */
+  --lumo-primary-contrast-color: #000000;
+}
+
+/* Asegurar que el body y layouts usen el fondo */
+body, vaadin-app-layout, [part="navbar"], [part="drawer"], vaadin-vertical-layout, vaadin-horizontal-layout {
+  background-color: var(--lumo-base-color) !important;
+  color: var(--lumo-body-text-color) !important;
+}
+
+/* Ajustar títulos explícitamente */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--lumo-header-text-color) !important;
+}
+
+/* Ajustar párrafos y texto */
+p, span, label, div {
+  color: var(--lumo-body-text-color) !important;
+}
+/* ---- Ajuste del selector Idioma ---- */
+
+/* Caja del combo */
+vaadin-multi-select-combo-box,
+vaadin-combo-box {
+  background-color: #eee9d9;       /* Blanco suave para contraste */
+  color: #2a2a2a;                  /* Texto oscuro */
+  border-radius: 6px;
+  border: 1px solid #c2b280;       /* Beige más oscuro */
+  --lumo-primary-text-color: #2a2a2a;
+  --lumo-body-text-color: #2a2a2a;
+  --lumo-contrast-90pct: #2a2a2a;
+}
+
+/* Menú desplegable */
+vaadin-multi-select-combo-box-overlay::part(overlay),
+vaadin-combo-box-overlay::part(overlay) {
+  background-color: #ffffff;        /* Fondo visible */
+  color: #2a2a2a;                   /* Texto oscuro */
+  border-radius: 6px;
+  border: 1px solid #c2b280;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Opciones dentro del menú */
+vaadin-multi-select-combo-box-overlay vaadin-multi-select-combo-box-item,
+vaadin-combo-box-overlay vaadin-combo-box-item {
+  background-color: #ffffff;
+  color: #2a2a2a;
+}
+
+vaadin-multi-select-combo-box-overlay vaadin-multi-select-combo-box-item:hover,
+vaadin-combo-box-overlay vaadin-combo-box-item:hover {
+  background-color: #f5e9d7;   /* Beige claro al pasar el mouse */
+}
